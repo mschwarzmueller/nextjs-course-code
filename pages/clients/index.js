@@ -1,9 +1,9 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 function ClientsPage() {
   const clients = [
-    { id: "max", name: "Maximilian" },
-    { id: "manu", name: "Manuel" },
+    { id: 'max', name: 'Maximilian' },
+    { id: 'manu', name: 'Manuel' },
   ];
 
   return (
@@ -14,7 +14,7 @@ function ClientsPage() {
           <li key={client.id}>
             <Link
               href={{
-                pathname: "/clients/[id]",
+                pathname: '/clients/[id]',
                 query: { id: client.id },
               }}
             >
