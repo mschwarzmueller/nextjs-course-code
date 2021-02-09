@@ -10,6 +10,7 @@
   "dependencies": {
     "next": "10.0.6",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "swr": "^0.4.2"
   }
 }
