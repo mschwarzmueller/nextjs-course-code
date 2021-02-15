@@ -5,18 +5,22 @@ function NewComment(props) {
   const [isInvalid, setIsInvalid] = useState(false);
 
   const emailInputRef = useRef();
+  const nameInputRef = useRef();
   const commentInputRef = useRef();
 
   function sendCommentHandler(event) {
     event.preventDefault();
 
     const enteredEmail = emailInputRef.current.value;
+    const enteredName = nameInputRef.current.value;
     const enteredComment = commentInputRef.current.value;
 
     if (
       !enteredEmail ||
       enteredEmail.trim() === '' ||
       !enteredEmail.includes('@') ||
+      !enteredName ||
+      enteredName.trim() === '' ||
       !enteredComment ||
       enteredComment.trim() === ''
     ) {
@@ -26,6 +30,7 @@ function NewComment(props) {
 
     props.onAddComment({
       email: enteredEmail,
+      name: enteredName,
       text: enteredComment,
     });
   }
