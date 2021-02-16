@@ -5,14 +5,14 @@ import NotificationContext from '../../store/notification-context';
 
 function NewsletterRegistration() {
   const emailInputRef = useRef();
-  const notifictionCtx = useContext(NotificationContext);
+  const notificationCtx = useContext(NotificationContext);
 
   function registrationHandler(event) {
     event.preventDefault();
 
     const enteredEmail = emailInputRef.current.value;
 
-    notifictionCtx.showNotification({
+    notificationCtx.showNotification({
       title: 'Signing up...',
       message: 'Registering for newsletter.',
       status: 'pending',
@@ -35,14 +35,14 @@ function NewsletterRegistration() {
         });
       })
       .then((data) => {
-        notifictionCtx.showNotification({
+        notificationCtx.showNotification({
           title: 'Success!',
           message: 'Successfully registered for newsletter!',
           status: 'success',
         });
       })
       .catch((error) => {
-        notifictionCtx.showNotification({
+        notificationCtx.showNotification({
           title: 'Error!',
           message: error.message || 'Something went wrong!',
           status: 'error',
