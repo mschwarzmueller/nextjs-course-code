@@ -6,7 +6,7 @@ import { connectToDatabase } from '../../../lib/db';
 
 export default NextAuth({
   session: {
-    jwt: true
+    jwt: true,
   },
   providers: [
     Providers.Credentials({
@@ -15,22 +15,29 @@ export default NextAuth({
 
         const usersCollection = client.db().collection('users');
 
-        const user = await usersCollection.findOne({email: credentials.email})
+        const user = await usersCollection.findOne({
+          email: credentials.email,
+        });
 
         if (!user) {
+          client.close();
           throw new Error('No user found!');
         }
 
-        const isValid = await verifyPassword(credentials.password, user.password);
+        const isValid = await verifyPassword(
+          credentials.password,
+          user.password
+        );
 
         if (!isValid) {
-          throw new Error('Could not log you in!');ƒ
+          client.close();
+          throw new Error('Could not log you in!');
         }
 
-        return { email: user.email };
-
         client.close();
-      }
-    })
-  ]
+        return { email: user.email };
+        
+      },
+    }),
+  ],
 });
