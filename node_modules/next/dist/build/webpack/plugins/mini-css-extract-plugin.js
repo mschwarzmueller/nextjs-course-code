@@ -1,0 +1,3 @@
+"use strict";exports.__esModule=true;exports.default=void 0;var _src=_interopRequireDefault(require("./mini-css-extract-plugin/src"));function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}// @ts-ignore: TODO: remove when webpack 5 is stable
+class NextMiniCssExtractPlugin extends _src.default{constructor(...args){super(...args);this.__next_css_remove=true;}}exports.default=NextMiniCssExtractPlugin;
+//# sourceMappingURL=mini-css-extract-plugin.js.map

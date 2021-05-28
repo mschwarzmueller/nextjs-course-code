@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../client/next.js"],"names":["window","next","catch","console","error"],"mappings":"kGAAA,gDAEAA,MAAM,CAACC,IAAP,CAAcA,IAAd,CAEA,mBAAWC,KAAX,CAAiBC,OAAO,CAACC,KAAzB","sourcesContent":["import initNext, * as next from './'\n\nwindow.next = next\n\ninitNext().catch(console.error)\n"]}
