@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../lib/typescript/FatalTypeScriptError.ts"],"names":["FatalTypeScriptError","Error"],"mappings":"yEAAO,KAAMA,CAAAA,oBAAN,QAAmCC,CAAAA,KAAM,E","sourcesContent":["export class FatalTypeScriptError extends Error {}\n"]}

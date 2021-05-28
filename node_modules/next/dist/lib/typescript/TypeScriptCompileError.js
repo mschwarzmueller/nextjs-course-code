@@ -1,2 +1,0 @@
-"use strict";exports.__esModule=true;exports.TypeScriptCompileError=void 0;class TypeScriptCompileError extends Error{}exports.TypeScriptCompileError=TypeScriptCompileError;
-//# sourceMappingURL=TypeScriptCompileError.js.map

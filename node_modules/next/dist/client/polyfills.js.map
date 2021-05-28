@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../client/polyfills.js"],"names":[],"mappings":"aAAA","sourcesContent":["import 'next/dist/build/polyfills/polyfill-nomodule'\n"]}
