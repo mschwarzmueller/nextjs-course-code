@@ -13,7 +13,6 @@ export async function getStaticProps() {
   const meetUpsCollection = db.collection('first_nextjs_meetups');
   const meetups = await meetUpsCollection.find().toArray();
   client.close();
-
   return {
     props: {
       meetups: meetups.map((each) => ({
