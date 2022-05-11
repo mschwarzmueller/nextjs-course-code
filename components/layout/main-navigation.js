@@ -6,7 +6,7 @@ import classes from './main-navigation.module.css';
 function MainNavigation() {
   return (
     <header className={classes.header}>
-      <Link href='/'>
+      <Link href="/">
         <a>
           <Logo />
         </a>
@@ -14,10 +14,10 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link href='/posts'>Posts</Link>
+            <Link href="/news">News</Link>
           </li>
           <li>
-            <Link href='/contact'>Contact</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

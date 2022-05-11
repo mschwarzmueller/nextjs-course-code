@@ -1,7 +1,8 @@
 .header {
   width: 100%;
   height: 6rem;
-  background-color: var(--color-grey-900);
+  /* background-color: var(--color-grey-900); */
+  background-color: #222b64;
   display: flex;
   justify-content: space-between;
   align-items: center;
