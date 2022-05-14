@@ -13,10 +13,10 @@ function FilteredEventsPage(props) {
   const router = useRouter();
 
   const filterData = router.query.slug;
-
-  const { data, error } = useSWR(
-    'https://nextjs-course-c81cc-default-rtdb.firebaseio.com/events.json'
-  );
+  
+  const fetcher = url => fetch(url).then(r => r.json())
+  
+  const { data, error } = useSWR('https://nextjs-course-c81cc-default-rtdb.firebaseio.com/events.json', fetcher);
 
   useEffect(() => {
     if (data) {
