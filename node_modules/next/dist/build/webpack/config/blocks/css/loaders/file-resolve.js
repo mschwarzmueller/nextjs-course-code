@@ -1,0 +1,2 @@
+"use strict";exports.__esModule=true;exports.cssFileResolve=cssFileResolve;function cssFileResolve(url,_resourcePath){if(url.startsWith('/')){return false;}return true;}
+//# sourceMappingURL=file-resolve.js.map

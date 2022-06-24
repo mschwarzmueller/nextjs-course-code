@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../lib/typescript/TypeScriptCompileError.ts"],"names":["TypeScriptCompileError","Error"],"mappings":"2EAAO,KAAMA,CAAAA,sBAAN,QAAqCC,CAAAA,KAAM,E","sourcesContent":["export class TypeScriptCompileError extends Error {}\n"]}
