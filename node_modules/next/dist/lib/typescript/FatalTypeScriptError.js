@@ -1,0 +1,2 @@
+"use strict";exports.__esModule=true;exports.FatalTypeScriptError=void 0;class FatalTypeScriptError extends Error{}exports.FatalTypeScriptError=FatalTypeScriptError;
+//# sourceMappingURL=FatalTypeScriptError.js.map

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../next-server/lib/router/utils/resolve-rewrites-noop.ts"],"names":["resolveRewrites"],"mappings":"qEAAe,QAASA,CAAAA,eAAT,EAA2B,CAAE","sourcesContent":["export default function resolveRewrites() {}\n"]}
