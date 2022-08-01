@@ -1,22 +1,20 @@
 import Link from 'next/link';
-
 import Logo from './logo';
-import classes from './main-navigation.module.css';
 
 function MainNavigation() {
   return (
-    <header className={classes.header}>
+    <header className="flex justify-between bg-blue-900 p-6 place-items-center">
       <Link href="/">
         <a>
           <Logo />
         </a>
       </Link>
       <nav>
-        <ul>
-          <li>
+        <ul className='flex'>
+          <li className='p-4 text-white'>
             <Link href="/news">News</Link>
           </li>
-          <li>
+          <li className='p-4 text-white'>
             <Link href="/contact">Contact</Link>
           </li>
         </ul>

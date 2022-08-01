@@ -1,7 +1,5 @@
-import classes from './logo.module.css';
-
 function Logo() {
-  return <div className={classes.logo}>Maynard Institute</div>;
+  return <div className="text-white uppercase text-3xl font-bold">Maynard Institute</div>;
 }
 
 export default Logo;
