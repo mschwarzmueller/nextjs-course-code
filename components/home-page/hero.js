@@ -3,7 +3,7 @@ import Image from 'next/image';
 function Hero() {
   return (
     <section className="bg-gray-800">
-      <div className='p-7 flex justify-center'>
+      <div className='p-7 flex justify-center class'>
         <Image
           src="/images/site/g1.jpg"
           alt="An image showing a rainbow gradient."
