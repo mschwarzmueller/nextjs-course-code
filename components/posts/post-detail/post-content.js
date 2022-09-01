@@ -63,7 +63,7 @@ function PostContent(props) {
 
   return (
     <div className="flex justify-center">
-      <div className="flex justify-center bg-slate-400 w-4/5 p-4 m-4">
+      <div className="flex justify-center bg-slate w-4/5 p-4 m-4">
       <article className={classes.content}>
       <PostHeader title={post.title} image={imagePath} />
       <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>

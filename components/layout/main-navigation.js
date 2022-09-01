@@ -4,13 +4,7 @@ import Logo from './logo';
 
 function MainNavigation() {
   return (
-    <header className="flex justify-between bg-white p-6 place-items-center"
-    style={{ 
-        backgroundColor: "#222b64",
-        paddingLeft: "140px",
-        paddingRight: "140px",
-  
-      }}
+    <header className="flex justify-between bg-primary p-6 place-items-center px-36"
     >
       <Link href="/">
         <a>
