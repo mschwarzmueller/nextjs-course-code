@@ -1,7 +1,18 @@
-import classes from './logo.module.css';
+import Head from "next/head";
 
 function Logo() {
-  return <div className={classes.logo}>Max' Next Blog</div>;
+  return(
+      <>
+      <Head>
+      <title>Mije</title>
+    </Head>
+    <div className="text-white uppercase text-4xl ml-25 font-oswald"
+  >Maynard Institute</div>
+
+      </>
+      
+    
+  )
 }
 
 export default Logo;

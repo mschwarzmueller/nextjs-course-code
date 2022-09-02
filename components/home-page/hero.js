@@ -1,23 +1,24 @@
 import Image from 'next/image';
 
-import classes from './hero.module.css';
-
 function Hero() {
   return (
-    <section className={classes.hero}>
-      <div className={classes.image}>
+    <section className="bg-gray">
+      <div className='p-7 flex justify-center class'>
         <Image
-          src='/images/site/max.png'
-          alt='An image showing Max'
+          src="/images/site/g1.jpg"
+          alt="An image showing a rainbow gradient."
           width={300}
           height={300}
+          className="rounded-full"
         />
       </div>
-      <h1>Hi, I'm Max</h1>
-      <p>
-        I blog about web development - especially frontend frameworks like
-        Angular or React.
-      </p>
+      <div className='uppercase flex justify-center'>
+        <h1 className="text-gray-300 text-5xl text-center pb-7 font-extrabold">
+        40 YEARS OF DRIVING <br />
+        DIVERSITY IN JOURNALISM
+      </h1>
+    </div>
+      
     </section>
   );
 }

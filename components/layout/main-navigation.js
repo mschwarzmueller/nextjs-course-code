@@ -1,23 +1,32 @@
+import Head from 'next/head';
 import Link from 'next/link';
-
 import Logo from './logo';
-import classes from './main-navigation.module.css';
 
 function MainNavigation() {
   return (
-    <header className={classes.header}>
-      <Link href='/'>
+    <header className="flex justify-between bg-primary p-6 place-items-center px-36"
+    >
+      <Link href="/">
         <a>
           <Logo />
         </a>
       </Link>
       <nav>
-        <ul>
-          <li>
-            <Link href='/posts'>Posts</Link>
+        <ul className='flex'>
+          <li className='p-4 text-white'
+          style={{
+            fontSize: "20px",
+          }}
+          >
+            <Link href="/news"
+            >News</Link>
           </li>
-          <li>
-            <Link href='/contact'>Contact</Link>
+          <li className='p-4 text-white'
+          style={{
+            fontSize: "20px",
+          }}
+          >
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
