@@ -6,7 +6,8 @@ function LastSalesPage(props) {
   // const [isLoading, setIsLoading] = useState(false);
 
   const { data, error } = useSWR(
-    'https://nextjs-course-c81cc-default-rtdb.firebaseio.com/sales.json'
+    'https://nextjs-course-c81cc-default-rtdb.firebaseio.com/sales.json',
+    (url) => fetch(url).then(res => res.json())
   );
 
   useEffect(() => {
