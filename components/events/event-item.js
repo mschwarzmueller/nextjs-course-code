@@ -3,6 +3,7 @@ import DateIcon from '../icons/date-icon';
 import AddressIcon from '../icons/address-icon';
 import ArrowRightIcon from '../icons/arrow-right-icon';
 import classes from './event-item.module.css';
+import { Fragment } from 'react';
 
 function EventItem(props) {
   const { title, image, date, location, id } = props;
@@ -32,10 +33,12 @@ function EventItem(props) {
         </div>
         <div className={classes.actions}>
           <Button link={exploreLink}>
+            <div className={classes.btn}>
             <span>Explore Event</span>
             <span className={classes.icon}>
               <ArrowRightIcon />
             </span>
+            </div>
           </Button>
         </div>
       </div>
