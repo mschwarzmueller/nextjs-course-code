@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
+import link from 'next/link'
 import classes from './eventItem.module.css'
 import Button from './UserInterface/button';
 
@@ -30,7 +30,7 @@ function EventItem(props) {
           </div>
         </div>
         <div className={classes.actions}>
-         <Button Link={exploreLink}>Explore Events</Button>
+         <Button link={exploreLink}>Explore Events</Button>
         </div>
       </div>
     </li>
