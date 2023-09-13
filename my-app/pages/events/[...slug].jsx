@@ -3,10 +3,10 @@ import { useRouter } from 'next/router';
 import useSWR from 'swr';
 
 import { getFilteredEvents } from '../../helpers/api-util';
-import EventList from '../../components/events/event-list';
+import EventList from '@/Components/events/eventList';
 import ResultsTitle from '@/Components/events/results-title';
-import Button from '../../components/ui/button';
-import ErrorAlert from '@/Components/ui/error-alert';
+import Button from '@/Components/events/ui/button';
+import ErrorAlert from '@/Components/events/ui/error-alert';
 
 function FilteredEventsPage(props) {
   const [loadedEvents, setLoadedEvents] = useState();
@@ -55,6 +55,7 @@ function FilteredEventsPage(props) {
   ) {
     return (
       <Fragment>
+      
         <ErrorAlert>
           <p>Invalid filter. Please adjust your values!</p>
         </ErrorAlert>

@@ -4,7 +4,9 @@ import { getEventById } from "@/dummy-data";
 import EventSummary from "@/Components/event-detail/event-summary";
 import EventLogistics from "@/Components/event-detail/event-logistics";
 import EventContent from "@/Components/event-detail/event-content";
-import ErrorAlert from "@/Components/error-alert/error-alert";
+import ErrorAlert from "@/Components/events/ui/error-alert";
+
+
 
 function EventsDetailPage() {
   const router = useRouter();
@@ -22,6 +24,7 @@ function EventsDetailPage() {
 
   return (
     <Fragment>
+    
       <EventSummary title={event.title} />
       <EventLogistics
         date={event.date}
