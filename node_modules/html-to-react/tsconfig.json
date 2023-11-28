@@ -1,0 +1,12 @@
+{
+  "include": ["lib/**/*"],
+  "compilerOptions": {
+    "allowJs": true,
+    // Generate d.ts files
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "types",
+    "declarationMap": true,
+    "strict": true
+  }
+}
